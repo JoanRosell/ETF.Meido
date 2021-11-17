@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ETF.Meido.CrossCutting.Errors.Implementation;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ErrorType = ETF.Meido.CrossCutting.Errors.Contracts.ErrorType;
 
 namespace ETF.Meido.WebApi.Controllers
 {
@@ -17,23 +19,18 @@ namespace ETF.Meido.WebApi.Controllers
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
+        private readonly ErrorService _errorService;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, ErrorService errorService)
         {
             _logger = logger;
+            _errorService = errorService;
         }
 
         [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+        public IEnumerable<Error> Get()
         {
-            var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
-            })
-            .ToArray();
+            yield return _errorService.GetError(ErrorType.GenericError);
         }
     }
 }

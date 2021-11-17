@@ -15,6 +15,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Cross-Cutting Layer", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETF.Meido.WebApi", "ETF.Meido.WebApi\ETF.Meido.WebApi.csproj", "{7E7644B0-7FB4-4EC0-AE52-6B25E79D8161}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETF.Meido.CrossCutting.DataTransferObject", "ETF.Meido.CrossCutting.DataTransferObject\ETF.Meido.CrossCutting.DataTransferObject.csproj", "{B36102EE-9480-4B80-A7A7-5B76DF0B9884}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETF.Meido.CrossCutting.Errors.Contracts", "ETF.Meido.CrossCutting.Error.Contracts\ETF.Meido.CrossCutting.Errors.Contracts.csproj", "{DA4D0246-1A7F-409E-B557-1E7A1F946D23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETF.Meido.CrossCutting.Errors.Implementation", "ETF.Meido.CrossCutting.Error.Implementation\ETF.Meido.CrossCutting.Errors.Implementation.csproj", "{29494C70-A357-4781-87A4-203B37CEA24E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,12 +31,27 @@ Global
 		{7E7644B0-7FB4-4EC0-AE52-6B25E79D8161}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E7644B0-7FB4-4EC0-AE52-6B25E79D8161}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E7644B0-7FB4-4EC0-AE52-6B25E79D8161}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B36102EE-9480-4B80-A7A7-5B76DF0B9884}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B36102EE-9480-4B80-A7A7-5B76DF0B9884}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B36102EE-9480-4B80-A7A7-5B76DF0B9884}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B36102EE-9480-4B80-A7A7-5B76DF0B9884}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA4D0246-1A7F-409E-B557-1E7A1F946D23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA4D0246-1A7F-409E-B557-1E7A1F946D23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA4D0246-1A7F-409E-B557-1E7A1F946D23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA4D0246-1A7F-409E-B557-1E7A1F946D23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29494C70-A357-4781-87A4-203B37CEA24E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29494C70-A357-4781-87A4-203B37CEA24E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29494C70-A357-4781-87A4-203B37CEA24E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29494C70-A357-4781-87A4-203B37CEA24E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{7E7644B0-7FB4-4EC0-AE52-6B25E79D8161} = {85A36BEE-FF0D-4EB0-AFE1-3B5B81C3F814}
+		{B36102EE-9480-4B80-A7A7-5B76DF0B9884} = {E38EA358-01B1-408D-9FCB-57BD3F528F5F}
+		{DA4D0246-1A7F-409E-B557-1E7A1F946D23} = {E38EA358-01B1-408D-9FCB-57BD3F528F5F}
+		{29494C70-A357-4781-87A4-203B37CEA24E} = {E38EA358-01B1-408D-9FCB-57BD3F528F5F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9A8827B2-0973-408D-BA5F-F15D6430511A}

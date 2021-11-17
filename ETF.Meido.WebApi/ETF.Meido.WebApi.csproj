@@ -8,4 +8,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ETF.Meido.CrossCutting.Error.Contracts\ETF.Meido.CrossCutting.Errors.Contracts.csproj" />
+    <ProjectReference Include="..\ETF.Meido.CrossCutting.Error.Implementation\ETF.Meido.CrossCutting.Errors.Implementation.csproj" />
+  </ItemGroup>
+
 </Project>
