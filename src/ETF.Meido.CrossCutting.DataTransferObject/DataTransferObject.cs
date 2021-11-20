@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ETF.Meido.CrossCutting.Notifications;
+using System;
 
 namespace ETF.Meido.CrossCutting.DataTransferObject
 {

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ETF.Meido.CrossCutting.Error.Implementation\ETF.Meido.CrossCutting.Errors.Implementation.csproj" />
+    <ProjectReference Include="..\ETF.Meido.CrossCutting.Notification\ETF.Meido.CrossCutting.Notifications.csproj" />
+  </ItemGroup>
+
+</Project>
