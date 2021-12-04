@@ -1,4 +1,4 @@
-﻿using ETF.Meido.CrossCutting.Errors.Implementation;
+﻿using ETF.Meido.CrossCutting.Errors.Contracts;
 using System.Collections.Generic;
 
 namespace ETF.Meido.CrossCutting.Notifications

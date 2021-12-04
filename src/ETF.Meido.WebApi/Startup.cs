@@ -30,7 +30,6 @@ namespace ETF.Meido.WebApi
 
             services.AddControllers();
             services.AddConfiguration(Configuration);
-            services.AddScoped<ErrorService>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ETF.Meido.WebApi", Version = "v1" });

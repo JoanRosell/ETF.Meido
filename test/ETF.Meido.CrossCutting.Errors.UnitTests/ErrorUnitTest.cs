@@ -1,5 +1,4 @@
-using ETF.Meido.CrossCutting.Errors.Implementation;
-using System;
+using ETF.Meido.CrossCutting.Errors.Contracts;
 using Xunit;
 
 namespace ETF.Meido.CrossCutting.Errors.UnitTests

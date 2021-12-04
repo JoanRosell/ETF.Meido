@@ -13,4 +13,8 @@
     <ProjectReference Include="..\ETF.Meido.CrossCutting.Error.Implementation\ETF.Meido.CrossCutting.Errors.Implementation.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
 </Project>

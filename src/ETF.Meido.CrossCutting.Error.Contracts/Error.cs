@@ -1,11 +1,11 @@
 ﻿using System;
 
-namespace ETF.Meido.CrossCutting.Errors.Implementation
+namespace ETF.Meido.CrossCutting.Errors.Contracts
 {
     public class Error
     {
-        public string Code { get; set; } = "";
-        public string Message { get; set; } = "";
+        public string Code { get; set; } = string.Empty;
+        public string Message { get; set; } = string.Empty;
 
         public Error(string code, string message)
         {

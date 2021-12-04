@@ -1,13 +1,12 @@
 ﻿using ETF.Meido.CrossCutting.Errors.Contracts;
-using ETF.Meido.CrossCutting.Errors.Implementation;
 using Microsoft.Extensions.Options;
 using System.Collections.Generic;
 
-namespace ETF.Meido.WebApi
+namespace ETF.Meido.CrossCutting.Errors.Implementation
 {
-    public class ErrorService
+    public class ErrorService : IErrorService
     {
-        Dictionary<ErrorType, Error> _errors;
+        private readonly Dictionary<ErrorType, Error> _errors;
 
         public ErrorService(IOptions<Dictionary<ErrorType, Error>> configuredErrors)
         {

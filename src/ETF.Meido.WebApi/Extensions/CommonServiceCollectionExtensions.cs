@@ -1,5 +1,4 @@
 ﻿using ETF.Meido.CrossCutting.Errors.Contracts;
-using ETF.Meido.CrossCutting.Errors.Implementation;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System.Collections.Generic;
