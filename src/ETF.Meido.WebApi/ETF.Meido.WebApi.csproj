@@ -9,12 +9,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ETF.Meido.Application.Services.Contracts\ETF.Meido.Application.Services.Contracts.csproj" />
+    <ProjectReference Include="..\ETF.Meido.Application.Services\ETF.Meido.Application.Services.csproj" />
     <ProjectReference Include="..\ETF.Meido.CrossCutting.Error.Contracts\ETF.Meido.CrossCutting.Errors.Contracts.csproj" />
     <ProjectReference Include="..\ETF.Meido.CrossCutting.Error.Implementation\ETF.Meido.CrossCutting.Errors.Implementation.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>

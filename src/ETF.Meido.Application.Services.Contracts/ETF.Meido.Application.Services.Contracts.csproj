@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ETF.Meido.Domain.Entities\ETF.Meido.Domain.Entities.csproj" />
+    <ProjectReference Include="..\ETF.Meido.Domain.RepositoryContracts\ETF.Meido.Domain.RepositoryContracts.csproj" />
+  </ItemGroup>
+
+</Project>
