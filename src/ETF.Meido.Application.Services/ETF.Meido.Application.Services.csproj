@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Extensions\ApplicationServicesServiceCollectionExtensions.cs~RF3c96030c.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ETF.Meido.Application.Services.Contracts\ETF.Meido.Application.Services.Contracts.csproj" />
+    <ProjectReference Include="..\ETF.Meido.Domain.RepositoryContracts\ETF.Meido.Domain.RepositoryContracts.csproj" />
+    <ProjectReference Include="..\ETF.Meido.Infrastructure.Repositories\ETF.Meido.Infrastructure.Repositories.csproj" />
+  </ItemGroup>
+
+</Project>

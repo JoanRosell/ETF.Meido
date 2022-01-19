@@ -1,3 +1,5 @@
+using ETF.Meido.Application.Services.Extensions;
+using ETF.Meido.WebApi.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -28,10 +30,13 @@ namespace ETF.Meido.WebApi
         {
 
             services.AddControllers();
+            services.AddConfiguration(Configuration);
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ETF.Meido.WebApi", Version = "v1" });
             });
+
+            services.AddApplicationServices();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

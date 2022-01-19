@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>739a7fa1-2ffc-4fbe-8f81-4eaed9b1ed2d</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ETF.Meido.Application.Services.Contracts\ETF.Meido.Application.Services.Contracts.csproj" />
+    <ProjectReference Include="..\ETF.Meido.Application.Services\ETF.Meido.Application.Services.csproj" />
+    <ProjectReference Include="..\ETF.Meido.CrossCutting.Error.Contracts\ETF.Meido.CrossCutting.Errors.Contracts.csproj" />
+    <ProjectReference Include="..\ETF.Meido.CrossCutting.Error.Implementation\ETF.Meido.CrossCutting.Errors.Implementation.csproj" />
+  </ItemGroup>
+
+</Project>
