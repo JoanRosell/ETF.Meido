@@ -35,15 +35,11 @@ namespace ETF.Meido.Infrastructure.ServiceAgents.Universe
 
             var regionData = await JsonSerializer.DeserializeAsync<IEnumerable<RegionNameLookupResponse>>(await regionNameLookupResponse.Content.ReadAsStreamAsync());
 
-            var regions = new List<Region>();
-            foreach (var region in regionData)
+            var regions = regionData.Select(regionLookup => new Region
             {
-                regions.Add(new Region
-                {
-                    Id = region.Id,
-                    Name = region.Name,
-                });
-            }
+                Id = regionLookup.Id,
+                Name = regionLookup.Name,
+            });
 
             return regions;
         }
